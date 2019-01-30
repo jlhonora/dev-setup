@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+set -e
+
+if [ -x "$(command -v brew)" ]; then
+  echo "Installing homebrew"
+  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
+
+packages=(tig ag curl jq)
+
+for package in ${packages[@]}; do
+  echo "Installing $package"
+  brew install $package
+done

@@ -1,0 +1,36 @@
+[user]
+	name = jlhonora
+	email = joseluishonorato@gmail.com
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[alias]
+	d = difftool
+	st = status
+	lol  = log --pretty=format:'%h - %an %ad : %s'
+	lola = log --graph --decorate --abbrev-commit --all --pretty=format:'%h - %an %ad : %s'
+	co = checkout
+[core]
+	editor = vim
+
+[color]
+	ui = auto
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+[push]
+	default = simple
+[merge]
+	tool = vimdiff
+

@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+# https://github.com/rbenv/rbenv
+
+set -e
+brew install rbenv
+rbenv init
+
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zshrc

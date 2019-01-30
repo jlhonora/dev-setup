@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+echo "Copying dotfiles"
+
+files=(.gitignore .gitconfig .vimrc)
+
+for file in ${files[@]}; do
+  cp $file ~/
+done
+
+echo "alias vim='vim -O'" >> ~/.zshrc
+echo "alias vun='vim -O'" >> ~/.zshrc
+echo "export EDITOR=vim" >> ~/.zshrc
+echo 'alias notes="mkdir -p ~/Documents/notes && touch ~/Documents/notes/$(date +\"%Y-%m-%d\").md && open ~/Documents/notes/$(date +\"%Y-%m-%d\").md"' >> ~/.zshrc
