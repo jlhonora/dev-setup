@@ -12,3 +12,5 @@ echo "alias vim='vim -O'" >> ~/.zshrc
 echo "alias vun='vim -O'" >> ~/.zshrc
 echo "export EDITOR=vim" >> ~/.zshrc
 echo 'alias notes="mkdir -p ~/Documents/notes && touch ~/Documents/notes/$(date +\"%Y-%m-%d\").md && open ~/Documents/notes/$(date +\"%Y-%m-%d\").md"' >> ~/.zshrc
+echo 'eval "$(rbenv init - zsh)"' >> ~/.zshrc
+echo "alias json=jq" >> ~/.zshrc
